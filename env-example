@@ -2,6 +2,11 @@
 # General Setup
 ############################
 
+### Set an static IP for your project
+# You can set an static IP for each project as you want, remember change first and second part as increment number
+LARADOCK_FRONTEND_SUBNET=174.19.0
+LARADOCK_BACKEND_SUBNET=174.20.0
+
 ### Application Name
 # It will used to name the containers
 APPLICATION_NAME=example

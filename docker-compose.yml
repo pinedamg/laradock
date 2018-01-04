@@ -659,8 +659,16 @@ services:
 networks:
   frontend:
     driver: "bridge"
+    ipam:
+      config:
+      - subnet: ${LARADOCK_FRONTEND_SUBNET}.0/16
+        gateway: ${LARADOCK_FRONTEND_SUBNET}.254
   backend:
     driver: "bridge"
+    ipam:
+      config:
+      - subnet: ${LARADOCK_BACKEND_SUBNET}.0/16
+        gateway: ${LARADOCK_BACKEND_SUBNET}.254
 
 ### Volumes Setup #############################################
 
